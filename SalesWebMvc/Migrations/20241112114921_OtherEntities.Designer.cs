@@ -12,7 +12,7 @@ using SalesWebMvc.Data;
 namespace SalesWebMvc.Migrations
 {
     [DbContext(typeof(SalesWebMvcContext))]
-    [Migration("20241112112349_OtherEntities")]
+    [Migration("20241112114921_OtherEntities")]
     partial class OtherEntities
     {
         /// <inheritdoc />
