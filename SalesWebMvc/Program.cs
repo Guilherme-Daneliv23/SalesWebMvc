@@ -2,6 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using SalesWebMvc.Data;
 using SalesWebMvc.Models;
+using SalesWebMvc.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +16,7 @@ builder.Services.AddDbContext<SalesWebMvcContext>(options =>
 
 // Adiciona o SeedingService ao contêiner de injeção de dependência
 builder.Services.AddScoped<SeedingService>();
+builder.Services.AddScoped<SellerService>();
 
 // Configura os serviços MVC
 builder.Services.AddControllersWithViews();
